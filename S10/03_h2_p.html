@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="first"></div>
+    <script>
+      var h2 = React.createElement("h2", null, "React JS Library");
+      var img = React.createElement("img", {
+        src: "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1",
+        width: "300",
+        height: "300",
+      });
+      var p = React.createElement(
+        "p",
+        null,
+        "React JS is a Javascript Library and it is used to create UI"
+      );
+
+      ReactDOM.render([h2, p, img], document.getElementById("first"));
+    </script>
+  </body>
+</html>

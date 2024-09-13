@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <h2>Button in Javascript</h2>
+    <script>
+      var btnObj = document.createElement("button");
+      btnObj.innerText = "Javascript Button";
+      btnObj.onclick = function () {
+        document.querySelector("h2").style.color = "red";
+      };
+      document.querySelector("body").appendChild(btnObj);
+
+      var ol = document.createElement("ol");
+      var li1 = document.createElement("li");
+      var li2 = document.createElement("li");
+      li1.innerText = "Apple";
+      li2.innerText = "Samsung";
+      ol.appendChild(li1);
+      ol.appendChild(li2);
+      document.querySelector("body").appendChild(ol);
+    </script>
+  </body>
+</html>

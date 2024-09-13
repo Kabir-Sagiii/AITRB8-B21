@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Concept</title>
+    <script>
+      function changeContent() {
+        var h2DomElement = document.getElementById("title");
+
+        h2DomElement.innerText = "Document Modified";
+        h2DomElement.style.color = "red";
+
+        var pDomElement = document.createElement("p");
+        pDomElement.innerText =
+          "The curriculum was taught well. Easy to understand definitions and concepts.";
+
+        var bodyDomElement = document.querySelector("body");
+
+        bodyDomElement.appendChild(pDomElement);
+
+        // for (var key in h2DomElement) {
+        //   console.log(key);
+        // }
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="title">Document Object Model</h2>
+    <button onclick="changeContent()">Do Some Action</button>
+  </body>
+</html>
