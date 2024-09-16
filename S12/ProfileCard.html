@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Card in React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="ProfileCard.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      let image = React.createElement("img", {
+        src: "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Linkedin-portraits-2.jpg?fit=800%2C1200&ssl=1",
+        width: "100%",
+        height: "230",
+      });
+
+      let h3 = React.createElement("h3", null, "Sara Alisa");
+
+      let p = React.createElement(
+        "p",
+        null,
+        ` Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus, adipisci! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Libero, eos?`
+      );
+
+      let button = React.createElement("button", null, "Profile Details");
+
+      let div = React.createElement("div", { id: "card" }, [
+        image,
+        h3,
+        p,
+        button,
+      ]);
+
+      let containerDiv = React.createElement(
+        "div",
+        { className: "container" },
+        [div, div, div, div]
+      );
+
+      ReactDOM.render(containerDiv, document.getElementById("root"));
+    </script>
+  </body>
+</html>

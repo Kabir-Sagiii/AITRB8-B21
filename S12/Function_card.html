@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <link rel="stylesheet" href="ProfileCard.css" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      function createDiv(imageurl, username) {
+        let image = React.createElement("img", {
+          src: imageurl,
+          width: "100%",
+          height: "230",
+        });
+
+        let h3 = React.createElement("h3", null, username);
+
+        let p = React.createElement(
+          "p",
+          null,
+          ` Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus, adipisci! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Libero, eos?`
+        );
+
+        let button = React.createElement("button", null, "Profile Details");
+
+        let div = React.createElement("div", { id: "card" }, [
+          image,
+          h3,
+          p,
+          button,
+        ]);
+
+        return div;
+      }
+
+      function fnContainerDiv() {
+        let containerDiv = React.createElement(
+          "div",
+          {
+            className: "container",
+          },
+          [
+            createDiv(
+              "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Linkedin-portraits-2.jpg?fit=800%2C1200&ssl=1",
+              "Sara Alisa"
+            ),
+            createDiv(
+              "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1",
+              "Rohan Verma"
+            ),
+            createDiv(
+              "https://i.pinimg.com/736x/07/44/76/074476f844838fb2487a9d7b4d08a904.jpg",
+              "Aditya Jaiswal"
+            ),
+          ]
+        );
+
+        return containerDiv;
+      }
+
+      ReactDOM.render(fnContainerDiv(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
