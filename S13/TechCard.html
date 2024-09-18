@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        padding: 30px;
+        width: 800px;
+        margin: 20px auto;
+        box-shadow: 0 0 10px black;
+        background-color: black;
+        color: white;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      function createTechCard(TechTitle, concepts) {
+        let h2 = React.createElement("h2", null, TechTitle);
+
+        let li1 = React.createElement("li", null, concepts[0]);
+        let li2 = React.createElement("li", null, concepts[1]);
+        let li3 = React.createElement("li", null, concepts[2]);
+
+        let ol = React.createElement("ol", null, [li1, li2, li3]);
+
+        var p = React.createElement(
+          "p",
+          null,
+          `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus, adipisci! `
+        );
+
+        let div = React.createElement("div", { id: "container" }, [h2, ol, p]);
+        return div;
+      }
+
+      function techContainer() {
+        let containerDiv = React.createElement("div", null, [
+          createTechCard("HTML", ["Forms", "Attributes", "Table Concept"]),
+          createTechCard("Javascript", ["Promises", "Callbacks", "Functions"]),
+          createTechCard("React JS", ["State", "Props", "Component"]),
+        ]);
+
+        return containerDiv;
+      }
+      ReactDOM.render(techContainer(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
