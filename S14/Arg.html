@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .card {
+        width: 270px;
+        padding: 10px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        background-color: black;
+        color: cornsilk;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateCard(props) {
+        //props = {username:"riya sharma",
+        //imageurl:""}
+        return (
+          <div className="card">
+            <img src={props.imageurl} width="100%" height="300" />
+            <h3>{props.username}</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit,
+              laboriosam.
+            </p>
+            <button>Profile Details</button>
+          </div>
+        );
+      }
+
+      function MultipleCard() {
+        return (
+          <div className="container">
+            <CreateCard
+              username={"Riya Sharma"}
+              imageurl={
+                "https://th.bing.com/th/id/OIP.EuJHTJ57tAP-ioSwuDG4IgAAAA?rs=1&pid=ImgDetMain"
+              }
+            />
+
+            <CreateCard
+              username={"Sneha Reddy"}
+              imageurl={
+                "https://i.pinimg.com/originals/93/ed/f3/93edf3265014fabe92633959fcea846a.jpg"
+              }
+            />
+
+            <CreateCard
+              username={"Ziya Khan"}
+              imageurl={
+                "https://th.bing.com/th/id/OIP.5XcK3NLwYBlxKcdgm_jMXwHaHa?rs=1&pid=ImgDetMain"
+              }
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MultipleCard />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
