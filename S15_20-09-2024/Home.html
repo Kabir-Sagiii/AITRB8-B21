@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Home.css" />
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Header() {
+        return (
+          <div id="header">
+            <h2>Header Section </h2>
+          </div>
+        );
+      }
+
+      function Main(props) {
+        return (
+          <div className="main">
+            <img src={props.url} width="300" height="300" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
+              fugiat nemo eaque praesentium non mollitia, magni officia
+              inventore reprehenderit harum! Error velit, earum id eveniet odio
+              facilis inventore non dignissimos tenetur vero quis dolorem in
+              saepe ullam odit ipsam molestias iusto? Illo, unde nesciunt!
+              Facere natus quaerat recusandae officia molestias provident dolor
+              asperiores molestiae in eum libero dolorum eos dicta quidem,
+              consequuntur nisi rerum? Illum libero quaerat aperiam
+              consequuntur. Atque, non officiis nisi sint, iure molestias in
+              porro ipsa ipsam eos, voluptas illum? Id excepturi ipsam cum
+              laborum quaerat illo. Unde, voluptatum sint reiciendis itaque
+              maxime quis necessitatibus ratione suscipit numquam neque quidem
+              iure sequi fugiat dolorem beatae incidunt, dolor quos eaque illo
+              officia consectetur, odio placeat fugit nihil? Eligendi quidem
+              inventore voluptatum ex, ratione a quaerat, totam aut maiores
+              velit reprehenderit iure natus dolores autem vel sit accusamus
+              nisi dolor, illum nostrum porro rerum molestiae. Adipisci
+              accusamus earum nemo.Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Aut fugiat nemo eaque praesentium non mollitia,
+              magni officia inventore reprehenderit harum! Error velit, earum id
+              eveniet odio facilis inventore non dignissimos tenetur vero quis
+              dolorem in saepe ullam odit ipsam molestias iusto? Illo, unde
+              nesciunt! Facere natus quaerat recusandae officia molestias
+              provident dolor asperiores molestiae in eum libero dolorum eos
+              dicta quidem, consequuntur nisi rerum? Illum libero quaerat
+              aperiam consequuntur. Atque, non officiis nisi sint, iure
+              molestias in porro ipsa ipsam eos, voluptas illum? Id excepturi
+              ipsam cum laborum quaerat illo. Unde, voluptatum sint reiciendis
+              itaque maxime quis necessitatibus ratione suscipit numquam neque
+              quidem iure sequi fugiat dolorem beatae incidunt, dolor quos eaque
+              illo officia consectetur, odio placeat fugit nihil? Eligendi
+              quidem inventore voluptatum ex, ratione a quaerat, totam aut
+              maiores velit reprehenderit iure natus dolores autem vel sit
+              accusamus nisi dolor, illum nostrum porro rerum molestiae.
+              Adipisci accusamus earum nemo.
+            </p>
+          </div>
+        );
+      }
+
+      function Footer() {
+        return (
+          <div id="footer">
+            <h4>Footer Section </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, temporibus ea eligendi quidem ipsum alias quis, magnam
+              quae iusto culpa dicta a voluptatum enim reprehenderit id
+              perferendis aut dolores nemo aspernatur, minima sed minus
+              voluptatibus inventore. Voluptas dolorem maxime praesentium ea
+              molestiae eius, a quia natus. Quaerat saepe quis tenetur rerum
+              molestias ab aperiam id repellat explicabo ipsa quasi odio
+              reprehenderit nulla illo, vel, in dolores cupiditate quibusdam
+              suscipit, minus quos qui numquam! Eveniet magnam necessitatibus
+              culpa saepe mollitia nisi sint eum sequi tempora amet porro
+              repellat magni eligendi nihil quae, rerum veniam illum? Adipisci
+              eos asperiores cupiditate explicabo deserunt?
+            </p>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Header />
+            <Main url="https://thumbs.dreamstime.com/z/many-used-modern-electronic-gadgets-use-white-floor-reuse-recycle-concept-top-view-153892434.jpg" />
+            <Main url="https://th.bing.com/th/id/OIP.h57TswrkyeEWHqN_9iVa9AAAAA?rs=1&pid=ImgDetMain" />
+            <Footer />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
