@@ -1,0 +1,23 @@
+.profileContainer {
+  width: 1000px;
+  margin: 50px auto;
+  height: 400px;
+  box-shadow: 0 0 10px black;
+  display: flex;
+}
+.leftPanel {
+  width: 30%;
+}
+.rightPanel {
+  width: 70%;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+.rightPanel dd {
+  margin-bottom: 10px;
+}
+.rightPanel button {
+  margin: 0px 10px;
+  padding: 5px 20px;
+}
