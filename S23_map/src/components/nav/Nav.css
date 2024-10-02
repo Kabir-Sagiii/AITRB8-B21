@@ -1,0 +1,42 @@
+.navContainer {
+  height: 75px;
+  background-color: black;
+  display: flex;
+}
+.leftNav {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  color: cornsilk;
+}
+.centerNav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerNav a {
+  text-decoration: none;
+  margin-right: 50px;
+  color: white;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 17px;
+}
+.rightNav {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightNav button {
+  border: none;
+  padding: 13px 40px;
+  background-color: red;
+  color: cornsilk;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 15px;
+}
