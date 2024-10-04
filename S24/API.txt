@@ -1,0 +1,5 @@
+Get All Products
+-----------------
+url : https://fakestoreapi.com/products
+method type : Get
+data format:

@@ -1,0 +1,25 @@
+.usersContainer {
+  padding: 30px;
+}
+.usersContainer h2 {
+  margin: 10px 0px;
+}
+.usersContainer button {
+  margin-top: 20px;
+  padding: 7px 40px;
+}
+.usersTable {
+  width: 1000px;
+  margin: 50px auto;
+}
+.usersTable table {
+  width: 100%;
+}
+.usersTable th {
+  color: green;
+  font-family: cursive;
+  font-size: 21px;
+}
+.usersTable img {
+  border-radius: 50%;
+}
