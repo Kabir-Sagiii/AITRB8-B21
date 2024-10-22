@@ -1,0 +1,43 @@
+.productsContainer {
+}
+.productsContainer h2 {
+  margin: 10px 0px;
+  color: green;
+  font-size: 37px;
+  font-family: cursive;
+}
+.productsContainer p {
+  font-family: cursive;
+}
+.productsContainer button {
+  margin-top: 20px;
+  padding: 7px 40px;
+  font-family: cursive;
+  font-weight: bold;
+  color: green;
+}
+.card {
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card :last-child {
+  color: red;
+}
+.allProductsContainer {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.allProductsContainer h3 {
+  margin-bottom: 10px;
+  color: green;
+  font-family: cursive;
+  font-weight: 300;
+}

@@ -1,0 +1,31 @@
+Promise Video:
+--------------
+https://youtu.be/ialfZyeAbaY?si=z2SeCPNR1UIXRZTv
+
+
+useEffect() Video
+------------------
+Part-1 : https://youtu.be/2UpyWRfigME?si=nZXGgB6ApBxizbhw
+
+
+Part - 2 : https://youtu.be/s0Os0M9xhGE?si=2h7sfRK9UV4mlrb5
+
+
+Lifecyel MEthods
+-----------------
+
+
+React Portals
+--------------
+
+Error Boundaries
+-------------------
+
+
+Lazy Loading
+-------------
+
+
+Axios.put
+-----------
+Tuesday

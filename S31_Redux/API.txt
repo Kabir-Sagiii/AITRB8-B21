@@ -1,0 +1,41 @@
+Get All Products
+-----------------
+url : https://fakestoreapi.com/products
+method type : Get
+data format:
+
+
+Electronics data
+----------------
+url : "https://fakestoreapi.com/products/category/electronics"
+method type:Get
+
+Jewelery data 
+--------------
+url : "https://fakestoreapi.com/products/category/jewelery"
+method type:Get
+
+Mens data 
+--------------
+url : "https://fakestoreapi.com/products/category/men's clothing"
+method type:Get
+
+womens data 
+--------------
+url : "https://fakestoreapi.com/products/category/women's clothing"
+method type:Get
+
+AddToCart
+-----------
+url : http://localhost:3000/addToCart
+method type : POST
+
+GetCartData
+------------
+url : http://localhost:3000/addToCart
+method type : GET
+
+DeleteProductFromCart
+---------------------
+url : http://localhost:3000/addToCart/<id>
+method type: delete
